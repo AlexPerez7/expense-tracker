@@ -2,6 +2,7 @@ import { useState } from "react";
 import { TOKENS } from "../lib/constants.js";
 import { FieldInput } from "./Shared.jsx";
 import { supabase } from "../lib/supabaseClient.js";
+import logo from "../assets/logo.png";
 
 export function ResetPassword({ onDone }) {
   const [password, setPassword] = useState("");
@@ -34,6 +35,7 @@ export function ResetPassword({ onDone }) {
         onSubmit={handleSubmit}
         style={{ background: TOKENS.surface, border: `1px solid ${TOKENS.border}`, borderRadius: 12, padding: 28, width: "100%", maxWidth: 360 }}
       >
+        <img src={logo} alt="" width={40} height={40} style={{ display: "block", marginBottom: 14 }} />
         <div className="display" style={{ fontSize: 17, fontWeight: 600, color: TOKENS.text, marginBottom: 4 }}>
           Elige una nueva contraseña
         </div>

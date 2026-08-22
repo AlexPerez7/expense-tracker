@@ -3,53 +3,53 @@
 /* ---- theme tokens — "ledger console", oscuro por defecto -------------- */
 
 :root {
-  --color-bg: #0e141b;
-  --color-surface: #161e27;
-  --color-surface-alt: #1d2733;
-  --color-border: #28323f;
-  --color-text: #e7edf3;
-  --color-text-muted: #8494a3;
-  --color-text-faint: #57646f;
-  --color-income: #3fbf8f;
-  --color-expense: #e8654f;
+  --color-bg: #0c1210;
+  --color-surface: #131b17;
+  --color-surface-alt: #19231d;
+  --color-border: #263329;
+  --color-text: #e9f2ec;
+  --color-text-muted: #8fa89d;
+  --color-text-faint: #57685f;
+  --color-income: #34d399;
+  --color-expense: #e5484d;
   --color-pending: #f0b94a;
-  --color-accent: #5b9bd5;
+  --color-accent: #1f9d6f;
 
-  --tint-accent: rgba(91, 155, 213, 0.12);
-  --tint-accent-soft: rgba(91, 155, 213, 0.06);
-  --tint-income: rgba(63, 191, 143, 0.12);
-  --tint-expense: rgba(232, 101, 79, 0.12);
+  --tint-accent: rgba(31, 157, 111, 0.12);
+  --tint-accent-soft: rgba(31, 157, 111, 0.06);
+  --tint-income: rgba(52, 211, 153, 0.12);
+  --tint-expense: rgba(229, 72, 77, 0.12);
 
   --heat-0: var(--color-surface-alt);
-  --heat-1: #4a2a22;
-  --heat-2: #7a3a2a;
-  --heat-3: #b04d34;
-  --heat-4: #e8654f;
+  --heat-1: #482324;
+  --heat-2: #78302f;
+  --heat-3: #ac3d3c;
+  --heat-4: #e5484d;
 }
 
 :root[data-theme="light"] {
-  --color-bg: #f4f6f8;
+  --color-bg: #f3f7f4;
   --color-surface: #ffffff;
-  --color-surface-alt: #eef1f4;
-  --color-border: #dde3e9;
-  --color-text: #1a2430;
-  --color-text-muted: #5b6672;
-  --color-text-faint: #8b95a1;
+  --color-surface-alt: #eaf2ec;
+  --color-border: #d7e3da;
+  --color-text: #14231b;
+  --color-text-muted: #4d6358;
+  --color-text-faint: #86988d;
   --color-income: #1f9d6f;
-  --color-expense: #d9503a;
+  --color-expense: #d43d42;
   --color-pending: #c98a1f;
-  --color-accent: #3e7fb8;
+  --color-accent: #17805c;
 
-  --tint-accent: rgba(62, 127, 184, 0.1);
-  --tint-accent-soft: rgba(62, 127, 184, 0.05);
+  --tint-accent: rgba(23, 128, 92, 0.1);
+  --tint-accent-soft: rgba(23, 128, 92, 0.05);
   --tint-income: rgba(31, 157, 111, 0.1);
-  --tint-expense: rgba(217, 80, 58, 0.1);
+  --tint-expense: rgba(212, 61, 66, 0.1);
 
   --heat-0: var(--color-surface-alt);
-  --heat-1: #f6d4c8;
-  --heat-2: #f0a98f;
-  --heat-3: #e57c56;
-  --heat-4: #d9503a;
+  --heat-1: #f7d4d3;
+  --heat-2: #eba8a6;
+  --heat-3: #de7a78;
+  --heat-4: #d43d42;
 }
 
 * {

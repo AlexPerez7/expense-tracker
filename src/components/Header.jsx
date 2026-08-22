@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Wallet, Tag, ListChecks, LayoutGrid, ScanLine, LogOut, Sun, Moon, Plus, PenLine, Upload, HelpCircle } from "lucide-react";
+import { Tag, ListChecks, LayoutGrid, ScanLine, LogOut, Sun, Moon, Plus, PenLine, Upload, HelpCircle } from "lucide-react";
 import { TOKENS } from "../lib/constants.js";
 import { pillStyle } from "./Shared.jsx";
 import { HelpModal } from "./HelpModal.jsx";
+import logo from "../assets/logo.png";
 
 const TAB_ITEMS = [
   { id: "resumen", label: "Resumen", icon: LayoutGrid },
@@ -17,9 +18,7 @@ export function Header({ tab, setTab, onSignOut, theme, onToggleTheme }) {
     <div style={{ borderBottom: `1px solid ${TOKENS.border}`, background: TOKENS.surface, position: "sticky", top: 0, zIndex: 10 }}>
       <div style={{ maxWidth: 1080, margin: "0 auto", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ width: 30, height: 30, borderRadius: 7, background: TOKENS.income, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Wallet size={16} color={TOKENS.bg} />
-          </div>
+          <img src={logo} alt="" width={30} height={30} style={{ display: "block" }} />
           <div className="display" style={{ fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em" }}>Ledger</div>
           <div className="header-subtitle" style={{ color: TOKENS.textFaint, fontSize: 12, marginLeft: 2 }}>· cuenta corriente CLP</div>
         </div>

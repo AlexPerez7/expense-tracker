@@ -19,8 +19,8 @@ export default defineConfig({
         start_url: BASE_PATH,
         scope: BASE_PATH,
         display: "standalone",
-        background_color: "#0E141B",
-        theme_color: "#0E141B",
+        background_color: "#0C1210",
+        theme_color: "#0C1210",
         icons: [
           { src: "pwa-64x64.png", sizes: "64x64", type: "image/png" },
           { src: "pwa-192x192.png", sizes: "192x192", type: "image/png" },
