@@ -57,7 +57,7 @@ export function HelpModal({ onClose }) {
         }}
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4, flexShrink: 0 }}>
-          <div className="display" style={{ fontSize: 16, fontWeight: 600 }}>Cómo usar Ledger</div>
+          <div className="display" style={{ fontSize: 16, fontWeight: 600 }}>Cómo usar Gastify</div>
           <button onClick={onClose} aria-label="Cerrar ayuda" title="Cerrar" style={{ background: "none", border: "none", color: TOKENS.textFaint, cursor: "pointer", padding: 4 }}>
             <X size={17} />
           </button>

@@ -19,7 +19,7 @@ export function Header({ tab, setTab, onSignOut, theme, onToggleTheme }) {
       <div style={{ maxWidth: 1080, margin: "0 auto", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <img src={logo} alt="" width={30} height={30} style={{ display: "block" }} />
-          <div className="display" style={{ fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em" }}>Ledger</div>
+          <div className="display" style={{ fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em" }}>Gastify</div>
           <div className="header-subtitle" style={{ color: TOKENS.textFaint, fontSize: 12, marginLeft: 2 }}>· cuenta corriente CLP</div>
         </div>
         <div className="header-controls" style={{ display: "flex", alignItems: "center", gap: 10 }}>

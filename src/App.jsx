@@ -23,7 +23,7 @@ const Resumen = lazy(() => import("./components/Resumen.jsx").then((m) => ({ def
 const Movimientos = lazy(() => import("./components/Movimientos.jsx").then((m) => ({ default: m.Movimientos })));
 const Conciliacion = lazy(() => import("./components/Conciliacion.jsx").then((m) => ({ default: m.Conciliacion })));
 
-const ONBOARDING_KEY = "ledger:onboarding-done";
+const ONBOARDING_KEY = "gastify:onboarding-done";
 
 export default function App({ onSignOut, theme, onToggleTheme }) {
   const [transactions, setTransactions] = useState([]);

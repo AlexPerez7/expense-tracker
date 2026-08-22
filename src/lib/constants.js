@@ -5,7 +5,7 @@ import {
   GraduationCap, Wrench, Shirt, Bus, CreditCard, PiggyBank, Users, MoreHorizontal,
 } from "lucide-react";
 
-// Design tokens — "ledger console": fondo tinta oscura, cifras en monoespaciada,
+// Design tokens — fondo esmeralda oscuro, cifras en monoespaciada,
 // un duotono controlado teal/coral para ingreso vs. gasto, ámbar para lo que
 // todavía necesita revisión humana (movimientos sin conciliar).
 // Los valores son CSS custom properties (definidas en index.css para modo

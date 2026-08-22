@@ -13,8 +13,8 @@ export default defineConfig({
       // registramos el SW a mano en main.jsx (chequeo periódico de updates)
       injectRegister: false,
       manifest: {
-        name: "Ledger",
-        short_name: "Ledger",
+        name: "Gastify",
+        short_name: "Gastify",
         description: "Gestor de gastos personal — movimientos, categorías y conciliación bancaria.",
         start_url: BASE_PATH,
         scope: BASE_PATH,

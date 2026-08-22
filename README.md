@@ -1,4 +1,4 @@
-# Ledger — gestor de gastos personal
+# Gastify — gestor de gastos personal
 
 PWA hecha en React + Vite para llevar el control de tus movimientos
 bancarios, categorizarlos y conciliarlos contra el reporte oficial del

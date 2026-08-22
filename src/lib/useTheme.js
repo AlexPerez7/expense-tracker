@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-const STORAGE_KEY = "ledger:theme";
+const STORAGE_KEY = "gastify:theme";
 
 function getInitialTheme() {
   const saved = localStorage.getItem(STORAGE_KEY);
