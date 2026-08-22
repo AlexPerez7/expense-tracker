@@ -93,30 +93,6 @@ export function Auth({ initialError }) {
             : "Tus movimientos y categorías, sincronizados entre tus dispositivos."}
         </div>
 
-        {mode !== "forgot" && (
-          <>
-            <button
-              type="button"
-              onClick={handleGoogleLogin}
-              disabled={googleLoading}
-              style={{
-                width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 9,
-                padding: "9px 0", borderRadius: 8, border: `1px solid ${TOKENS.border}`, background: TOKENS.bg,
-                color: TOKENS.text, fontSize: 13, fontWeight: 500, cursor: googleLoading ? "default" : "pointer",
-                opacity: googleLoading ? 0.6 : 1, marginBottom: 16,
-              }}
-            >
-              <GoogleIcon size={16} />
-              {googleLoading ? "Redirigiendo…" : "Continuar con Google"}
-            </button>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-              <div style={{ flex: 1, height: 1, background: TOKENS.border }} />
-              <span style={{ fontSize: 11, color: TOKENS.textFaint }}>o</span>
-              <div style={{ flex: 1, height: 1, background: TOKENS.border }} />
-            </div>
-          </>
-        )}
-
         <FieldInput label="Email" type="email" value={email} onChange={setEmail} required autoComplete="email" style={{ marginBottom: mode === "forgot" ? 16 : 12 }} />
         {mode !== "forgot" && (
           <FieldInput label="Contraseña" type="password" value={password} onChange={setPassword} required minLength={6}
@@ -137,6 +113,30 @@ export function Auth({ initialError }) {
         >
           {loading ? "Un momento…" : submitLabels[mode]}
         </button>
+
+        {mode !== "forgot" && (
+          <>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "16px 0" }}>
+              <div style={{ flex: 1, height: 1, background: TOKENS.border }} />
+              <span style={{ fontSize: 11, color: TOKENS.textFaint }}>o</span>
+              <div style={{ flex: 1, height: 1, background: TOKENS.border }} />
+            </div>
+            <button
+              type="button"
+              onClick={handleGoogleLogin}
+              disabled={googleLoading}
+              style={{
+                width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 9,
+                padding: "9px 0", borderRadius: 8, border: `1px solid ${TOKENS.border}`, background: TOKENS.bg,
+                color: TOKENS.text, fontSize: 13, fontWeight: 500, cursor: googleLoading ? "default" : "pointer",
+                opacity: googleLoading ? 0.6 : 1,
+              }}
+            >
+              <GoogleIcon size={16} />
+              {googleLoading ? "Redirigiendo…" : "Continuar con Google"}
+            </button>
+          </>
+        )}
 
         {mode === "signin" && (
           <div style={{ marginTop: 12, textAlign: "center", fontSize: 12, color: TOKENS.textFaint }}>
